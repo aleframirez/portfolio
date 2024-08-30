@@ -1,0 +1,203 @@
+:root {
+  --project-size: 240px;
+  /* --main-color: #09203f; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #94a6b3;
+}
+
+body {
+  background-color: #09203f;
+  max-width: 60vw;
+  margin: 0 auto;
+  color: #94a6b3;
+}
+
+header h1 {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #09203f;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 8vw;
+  border-radius: 99px;
+  border: 1px solid black;
+}
+
+.menu-icon {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-size: large;
+}
+
+header nav ul li:hover {
+  border-bottom: 3px solid yellowgreen;
+  padding-top: 3px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aboutme,
+.projects,
+.skills h2 {
+  padding: 10px 0;
+}
+
+.contenedor-proyectos article {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.contenedor-proyectos article h3 {
+  padding: 20px 0;
+}
+
+.contenedor-proyectos article a img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.contenedor-proyectos article div img {
+  width: 3vw;
+  padding: 10px;
+}
+
+.contenedor-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedor-skills article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.contenedor-skills article img {
+  width: 3vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  padding: 10px;
+}
+
+footer div article {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+@media (width < 768px) {
+  body {
+    max-width: 100vw;
+  }
+
+  header {
+    width: 100%;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #09203f;
+  }
+
+  header nav {
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 18vw;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 70%;
+    font-size: medium;
+  }
+
+  header nav ul li {
+    padding: 10px;
+  }
+
+  .contenedor-proyectos article {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 30px 0;
+  }
+
+  .contenedor-proyectos article a img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .contenedor-proyectos article div img {
+    width: 15vw;
+    padding: 10px;
+  }
+
+  .contenedor-skills article img {
+    width: 10vw;
+  }
+}
